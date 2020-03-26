@@ -97,14 +97,19 @@ body{
   padding: 40px;
   text-align: center;
 }
-
 .cover-photo-container{
   margin-bottom: 40px;
 }
 
 .cover-photo{
+  transition: all 0.5s linear;
   border-radius: 50%;
 }
+
+
+.cover-photo-container:hover .cover-photo {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.cover-photo {overflow:hidden;}
+
 
 .cover-text{
   background-color: rgba(70,203,253,0.7);
@@ -134,7 +139,7 @@ body{
 
 .title-underline span{
   display: inline-block;
-  border-bottom: 8px solid #46cbfd;
+  border-bottom: 8px solid #17a2b8;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -322,4 +327,107 @@ ejem-item-title{
 
 #usermessage{
   background-color: #eeeeee;
+}
+
+
+/* estilos para las pruebas-------------------------- */
+
+
+.titulo_prueba{
+  color: #ffffff;
+  background: blue;
+  font-size: 30px;
+  width: 500px;
+  font-family: Comic Sans MS;
+}
+
+.titulo_prueba2{
+  color: #ffffff;
+  background: blue;
+  font-size: 30px;
+  width: 500px;
+  font-family: Comic Sans MS;
+  border: red 5px solid;
+}
+
+.titulo_prueba3{
+  color: #ffffff;
+  background: blue;
+  font-size: 30px;
+  width: 380px;
+  font-family: Comic Sans MS;
+}
+
+.titulo_prueba3.clas2{
+  border: red 5px dotted;
+}
+
+.titulo_prueba3.clas3{
+  border: red 5px dashed;
+}
+
+.titulo_prueba3.clas4{
+  border: red 5px double;
+}
+
+.titulo_prueba3.clas5{
+  border: red 5px inset;
+}
+
+.titulo_prueba3.clas6{
+  border: red 5px outset;
+}
+/* ----- efectos ---------------- */ 
+
+
+
+.txt-area{
+  margin-left: auto;
+  margin-right: auto;
+  background: #eeeeee;
+  border: 0;
+
+  width: 80%;
+  height: 50%;
+  text-align: initial;
+}
+
+.contenedor{
+  margin-bottom: 40px;
+}
+
+.foto1:hover {transition:all .5s ease-in-out;filter: blur(5px);}
+
+
+.foto2:hover {transition:all .5s ease-in-out;filter: grayscale(80%);}
+
+.foto3:hover {transition:all .5s ease-in-out;filter: saturate(180%);}
+
+.foto4:hover {transition:all .5s ease-in-out;filter: opacity(.5);}
+
+  
+.contenedor5:hover .foto5 {transition:all .5s ease-in-out;-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor5 {transition:all .5s ease-in-out;overflow:hidden;}
+
+.contenedor6:hover .foto6 {transition:all .5s ease-in-out;-webkit-transform:scale(0.5);transform:scale(0.5);}
+.contenedor6 {transition:all .5s ease-in-out;overflow:hidden;}
+
+.foto9:hover {transition:all .5s ease-in-out;-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+  
+.foto7:hover {
+transition:all .5s ease-in-out;
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;}
+
+
+.foto8:hover{
+transition:all .5s ease-in-out;
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
 }

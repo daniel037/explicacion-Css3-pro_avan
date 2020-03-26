@@ -30,7 +30,7 @@
 							<ul class="header-menu-wrapper">
 								<li class="header-menu-item2"><a href="#ejemplos" class="header-menu-link">definicion</a></li>
 								<li class="header-menu-item2"><a href="#select" class="header-menu-link">Selectores</a></li>
-								<li class="header-menu-item2"><a href="" class="header-menu-link">otros</a></li>
+								<li class="header-menu-item2"><a href="#otros" class="header-menu-link">otros</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -326,7 +326,6 @@ article a{
 	background-color: purple;
 }
 							
-
 						</textarea>
 					</div>
 				</div>
@@ -337,6 +336,254 @@ article a{
 	
 
 		<!-- --------- fin seccion selectores ------------------------------------->
+
+
+
+		<!-- --------- inicia seccion otros ------------------------------------->
+
+
+		<section class="otros" id="otros">
+			<header >
+				<h1 class="title-underline">
+					<span>
+						otros
+					</span>
+				</h1>
+			</header>
+			<form action="" class="select-form">
+				<div class="select-row" align="center">
+					<div class="select-column --width100">
+						<h2 style="color: white">Modificar Estilo</h2>
+						<textarea rows="85" id="usermessage" name="usermessage" required disabled="on"/ class="txt-area">
+si tenemos en nuestro archivo HTML un titulo o un lavel o casi cualquier otra etiqueta podemos modificar el color de letra, color de fondo, tamaño de letra, tipo de letra, y el tamaño del contenedor.
+
+En el archivo HTML tendremos un titulo con una clase :
+
+		
+		<h1 class="titulo_prueba">Este es el titulo....</h1> 
+
+en nuestra hoja CSS vamos a dar estilo utilizando un seleccionador de clase:
+
+		.titulo_prueba{
+			/* canbiar el color de fondo */
+			background: blue;
+			/* cambiar tamaño de letra*/
+			font-size: 30px;
+			/* cambiar color de letra */
+			color: #ffffff;
+			/* cambiar tipo de letra*/
+			font-family: Comic Sans MS;
+			/* tamaño del contenedor*/
+			 width: 7000px;
+		}
+
+						</textarea>
+
+						<h1 class="titulo_prueba">Este es el Resultado....</h1>
+
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<!-- ------------------ bordes ------------------------------------>
+
+
+		<section>
+			<form action="" class="select-form">
+				<div class="select-row" align="center">
+					<div class="select-column --width100">
+						<h2 style="color: white">Bordes</h2>
+						<textarea rows="85" id="usermessage" name="usermessage" required disabled="on" class="txt-area"/ >
+Continuando con el anterior ejemplo, podemos hacer uso de algunos tipos de bordes,
+		
+		
+		 border: red 5px solid;
+
+		En este ejemplo colocaremos un borde a nuestro <h1> de
+		color rojo con 5px de ancho y solido(linea continua)
+
+
+Añadimos nuestra codigo para los bordes a nuestra clase en la hoja CSS que teniamos.
+
+		.titulo_prueba{
+			/* canbiar el color de fondo */
+			background: blue;
+			/* cambiar tamaño de letra*/
+			font-size: 30px;
+			/* cambiar color de letra */
+			color: #ffffff;
+			/* cambiar tipo de letra*/
+			font-family: Comic Sans MS;
+			/* tamaño del contenedor*/
+			width: 7000px;
+			/* bordes */ 
+			border: red 5px solid;
+		}
+
+						</textarea>
+						<h1 class="titulo_prueba2">Este es el Resultado....</h1>
+
+						<table>
+							<tr>
+								<td colspan="2" align="center" style="color: white"> Distintos tipos de bordes</td>
+							</tr>
+
+							<tr>
+								<td style="color: white" >border: red 5px dotted;</td>
+								<td><h1 class="titulo_prueba3 clas2">Este es el Resultado....</h1></td>
+							</tr>
+
+							<tr>
+								<td style="color: white">border: red 5px dashed;</td>
+								<td><h1 class="titulo_prueba3 clas3">Este es el Resultado....</h1></td>
+							</tr>
+
+							<tr>
+								<td style="color: white">border: red 5px double;</td>
+								<td><h1 class="titulo_prueba3 clas4">Este es el Resultado....</h1></td>
+							</tr>
+
+							<tr>
+								<td style="color: white">border: red 5px inset;</td>
+								<td><h1 class="titulo_prueba3 clas5">Este es el Resultado....</h1></td>
+							</tr>
+
+							<tr>
+								<td style="color: white">border: red 5px outset;</td>
+								<td><h1 class="titulo_prueba3 clas6">Este es el Resultado....</h1></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</form>
+		</section>
+	
+
+		<!-- --------- fin seccion otros ------------------------------------->		
+
+		<!-- ----------- seccion efectos ------------------------------------->
+		<section>
+			<form action="" class="select-form">
+				<div class="select-row" align="center">
+					
+					<h2 style="color: white">Efectos de Imagenes</h2>
+
+					<textarea rows="10" cols="45" required disabled="on" class="txt-area" />
+
+	Para esta parte usare el siguiente codigo base para una imagen en HTML
+
+			<div class="contenedor">
+				<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto" />
+			</div>
+
+					</textarea><br><br>
+
+						<div class="contenedor">
+							<img src="img/modelo.jpg" alt="Daniel Salazar" height="200" class="foto" />
+						</div>
+						
+					<textarea rows="8" cols="45" required disabled="on" class="txt-area" />
+	Para dar los diferentes efectos solo estaremos modificando la clase 
+	contenedor y foto en nuestra hoja de estilos CSS.
+
+	La instrucción
+
+		transition:all .5s ease-in-out;
+
+	Debera ser agregada para cada caso ya que sin ella no se mirara tan bien el efecto..
+
+					</textarea><br>
+
+					<h2 style="color: white">Desenfoque</h2>
+
+					<div class="contenedor">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto1" />
+					</div>
+					<textarea rows="1" cols="45" required disabled="on" class="txt-area" />
+	.foto:hover {filter: blur(5px);}</textarea><br>
+
+
+
+					<h2 style="color: white">Escala de Grises</h2>
+
+					<div class="contenedor">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto2" />
+					</div>
+					<textarea rows="1" cols="45" required disabled="on" class="txt-area" />
+	.foto:hover {filter: grayscale(80%);}</textarea><br>
+
+
+					<h2 style="color: white">Saturación</h2>
+
+					<div class="contenedor">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto3" />
+					</div>
+					<textarea rows="1" cols="45" required disabled="on" class="txt-area" />
+	.foto:hover {filter: saturate(180%);}</textarea><br>
+
+
+					<h2 style="color: white">Transparencia</h2>
+
+					<div class="contenedor">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto4" />
+					</div>
+					<textarea rows="1" cols="45" required disabled="on" class="txt-area" />
+	.foto:hover {filter: opacity(.5);}</textarea><br>
+
+
+					<h2 style="color: white">Zoom y Cambios de Tamaño</h2>
+
+					<div class="contenedor5">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto5" />
+					</div>
+					<textarea rows="3" cols="100" required disabled="on" class="txt-area" />
+	.contenedor:hover .foto {-webkit-transform:scale(1.3);transform:scale(1.3);}
+	.contenedor {overflow:hidden;}</textarea><br>
+
+
+					<textarea rows="2" cols="100" required disabled="on" class="txt-area" />
+	En el anterior ejemplo lo que hicimos fue multiplicar el tamaño de la imagen por 1.3,
+	si usamos un valor menos a 1 la imagen se contrae</textarea><br>
+					<div class="contenedor6">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto6" />
+					</div><br>
+
+
+					<h2 style="color: white">Giros y Rotaciones</h2>
+
+
+					<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto9" />
+					
+					<textarea rows="1" cols="100" required disabled="on" class="txt-area" />
+	.foto:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}</textarea><br><br><br>
+
+					
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto7" />
+					
+					<textarea rows="5" cols="100" required disabled="on" class="txt-area" />
+	.foto:hover {
+	-webkit-transform: rotateY(180deg);
+	-webkit-transform-style: preserve-3d;
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;}</textarea><br>
+
+					<h2 style="color: white">Combinado</h2>
+
+					<div class="contenedor8">
+						<img src="img/modelo.jpg" alt="Modelo" height="200" class="foto8" />
+					</div>
+					<textarea rows="3" cols="100" required disabled="on" class="txt-area" />
+	.contenedor:hover .foto {-webkit-transform:scale(1.3);transform:scale(1.3);}
+	.contenedor {overflow:hidden;}</textarea><br>
+					
+				</div>
+			</form>
+		</section>
+
+
+
+		<!-- ----------- fin efectos --------------------------------->
 
 		<!-- footer-------------------------------------------------->
 		<footer class="footer">
@@ -350,10 +597,5 @@ article a{
 			</div>
 		</footer>
 		<!-- fin de footer ---------------------------------------------->
-
-
-
-
-
 	</body>
 </html>
