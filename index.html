@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<title>QUE ES CSS</title>
+	</head>
+	<body>
+
+		<!-- inicio de header -->
+		<header class="header">
+			<div class="header-wrapper">
+				<div class="header-logo">
+					<img src="img/logo.png" alt="logo-portafolio" height="60px" />
+				</div>
+				<nav class="header-menu">
+					<ul class="header-menu-wrapper">
+						<li class="header-menu-item">
+							<a href="#que_es" class="header-menu-link">¿Qué es css3?</a>
+						</li>
+						<li class="header-menu-item">
+							<a href="#usos" class="header-menu-link">usos</a>
+						</li>
+						<li class="header-menu-item">
+							<a href="#ventajas" class="header-menu-link">ventajas</a>
+						</li>
+						<li class="header-menu-item">
+							<a href="#" class="header-menu-link">ejemplos</a>
+							<ul class="header-menu-wrapper">
+								<li class="header-menu-item2"><a href="#ejemplos" class="header-menu-link">definicion</a></li>
+								<li class="header-menu-item2"><a href="#select" class="header-menu-link">Selectores</a></li>
+								<li class="header-menu-item2"><a href="" class="header-menu-link">otros</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- fin de header ------------------------>
+
+		<!-- comienza la portada -------
+			el ondo sera agregado en css ------------>
+
+		<section class="cover">
+			<div class="cover-wrapper">
+				<div class="cover-photo-container">
+					<img src="img/perfil.jpg" alt="Daniel Salazar" height="200" class="cover-photo" />
+				</div>
+				<div class="cover-text">
+					<h1 class="cover-title">Daniel037</h1>
+					<h2 class="cover-sub-title">CSS3. Cascade Style Sheets</h2>
+
+				</div>
+			</div>
+			
+		</section>
+
+		<!-- ------fin de portada ----------------------->
+
+
+		<!-- --------- seccion para que es ----->
+
+		<section class="que_es" id="que_es">
+			<header>
+				<h1 class="title-underline">
+					<span>
+						que es?
+					</span>
+				</h1>
+			</header>
+			<div class="description">
+				<p> 
+					CSS significa Cascade Style Sheets, también llamado Hojas de Estilo en Cascada.
+					<ul>
+						<li>
+							 Cascading: Significa que los estilos que se aplican a los elementos de una página web se propagan a los elementos que contiene (se propagan en cascada).
+						</li>
+						<li>
+							Style: Mediante CSS aplicamos estilos visuales a los distintos elementos de nuestra página web.
+						</li>
+						<li>
+							 Sheets: Significa hojas, porque los estilos de una página web se añaden en ficheros aparte , en ficheros con la extensión <span>.css</span> de manera general.
+						</li>
+					</ul>
+				</p>
+					
+				<p>
+					CSS es un lenguaje de marcado que se emplea para dar formato a un sitio web. Es decir, funciona en conjunto con los archivos HTML.
+				</p>
+					
+				
+			</div>
+		</section>
+
+		<!-- ---------- fin seccion para que es ----------------------------------->
+
+		<!-- --------- seccion para usos ----->
+
+		<section class="usos" id="usos">
+			<header>
+				<h1 class="title-underline">
+					<span>
+						usos
+					</span>
+				</h1>
+			</header>
+			<div class="description">
+				<p> 
+					CSS sirve para definir la estética de un sitio web en un documento externo y eso mismo permite que modificando ese documento (la hoja CSS) podamos cambiar la estética entera de un sitio web. Ese es precisamente el poder de CSS, en otras palabras.
+
+				</p>	
+				<p>
+					 CSS3 sirve para cambiar el aspecto visual de un sitio web para que sea mucho mas agradable y llamativo, desde las medidas para los márgenes hasta las especificaciones para las imágenes y el texto. CSS3 funciona mediante módulos, algunos de los más comunes son “colors”, “fonts”, “backgrounds”, etc. Los módulos son sólo categorías en las que se pueden dividir las modificaciones que hacemos al aspecto de nuestro sitio web. Existen un gran variedad de módulos, pero mencionaremos algunos de los más útiles y que añaden mayor interactividad a un sitio.
+				</p>							
+			</div>
+		</section>
+
+		<!-- ---------- fin seccion usos ----------------------------------->
+
+		<!-- --------- seccion para ventajas ----->
+
+		<section class="ventajas" id="ventajas">
+			<header>
+				<h1 class="title-underline">
+					<span>
+						ventajas
+					</span>
+				</h1>
+			</header>
+			<div class="description">
+				<p> 
+					<ul>
+						<li>
+							Es gratuito:
+							<p>
+								no necesitas de ningún software costoso para empezar a codificar en CSS. 
+								Si se busca una alternativa gratuita, te puedo recomendar Notepad++, o mi favorito sublime text.
+							</p>
+						</li>
+						<li>
+							Todos los estilos en una sola página
+							<p>
+								Esta es probablemente la mayor ventaja de CSS, pues permite vincular un solo archivo CSS a diversas páginas. De modo que puedes definir todos los estilos de un sitio web y vincularlos mediante las etiquetas respectivas según corresponda.
+							</p>
+						</li>
+						<li>
+							Genera sitios más rápidos
+							<p>
+								No sólo puede mejorar tu productividad sino que ayuda a mejorar el tiempo de respuesta de tu sitio. Ya que todos los estilos se encuentran en un solo archivo CSS, evita que tengas que repetir código en los archivos HTML. 
+
+								Además, esta hoja de estilos se mantiene en la caché del navegador de modo que cuando un usuario visita otra página de tu sitio, evita que el archivo CSS se cargue nuevamente, simplemente emplea la copia en la caché y de este modo se mejora el tiempo de respuesta de tu sitio.
+							</p>
+						</li>
+						<li>
+							Otras:
+							<p>
+								<ul>
+									<li>
+										Se obtiene un mayor control de la presentación del sitio al poder tener todo el código CSS reunido en uno, lo que facilita su modificación.
+									</li>
+									<li>
+										Conseguimos hacer mucho más legible el código HTML al tener el código CSS aparte (Siempre que no usemos estilos en línea, claro está).
+									</li>
+									<li>
+										Pueden mostrarse distintas hojas de estilo según el dispositivo que estemos utilizando (versión impresa, versión móvil, leída por un sintetizador de voz…) o dejar que el usuario elija.
+
+									</li>
+									<li>
+										Las novedades de CSS3 nos permiten ahorrarnos tiempo y trabajo al poder seguir varias técnicas (bordes redondeados, sombra en el texto, sombra en las cajas, etc.) sin necesidad de usar un editor gráfico.
+									</li>
+								</ul>
+
+							</p>
+						</li>
+					</ul>
+				</p>
+				
+					
+				
+			</div>
+		</section>
+
+		<!-- ---------- fin seccion de ventajas ----------------------------------->
+		<section>
+			<header >
+				<h1 class="title-underline">
+					<span>
+						EJEMPLOS
+					</span>
+					<br><br><br><br>
+				</h1>
+			</header>
+		</section>
+
+
+		<!-- ---------- inicia seccion declaraciones ----------------------------------->
+		<section class="ejemplos" id="ejemplos">
+			<header >
+				<h1 class="title-underline">
+					<span>
+						declaraciones
+					</span>
+				</h1>
+			</header>
+			<div class="ejem-wrapper">
+				<article class="ejem-item">
+					<div class="ejem-item-img-container">
+						<img src="img/en_linea.png"/ alt="en linea" class="ejem-item-img" />
+					</div>
+					<div class="ejem-item-description">
+						
+						<p class="ejem-item-client">
+							Directamente en la linea a trabajar
+
+						</p>
+						
+					</div>
+				</article>
+
+				<article class="ejem-item">
+					<div class="ejem-item-img-container">
+						<img src="img/en_scrip.png"/ alt="en scrip" class="ejem-item-img" />
+					</div>
+					<div class="ejem-item-description">
+						
+						<p class="ejem-item-client">
+							Como un escrip del tipo style 
+
+						</p>
+						
+					</div>
+				</article>
+
+				<article class="ejem-item">
+					<div class="ejem-item-img-container">
+						<img src="img/hoja_estilo.png"/ alt="hoja estilo" class="ejem-item-img" />
+					</div>
+					<div class="ejem-item-description">
+						
+						<p class="ejem-item-client">
+							En una hoja de estilo por separado al codigo HTML
+						</p>
+						
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<!-- ---------- fin secccion declaraciones ----------------------------------->
+
+		<!-- --------- inicia seccion selectores ------------------------------------->
+
+
+		<section class="select" id="select">
+			<header >
+				<h1 class="title-underline">
+					<span>
+						selectores
+					</span>
+				</h1>
+			</header>
+			<form action="" class="select-form">
+				<div class="select-row" align="center">
+					<div class="select-column --width100">
+						<textarea rows="155" id="usermessage" name="usermessage" required disabled="on"/ class="txt-area">
+
+/* selector universal, con este selector se puede dar estilo a todos los elementos del HTML*/
+
+*{
+	border: 1px solid blue;
+	margin: 5px;
+}
+
+/* selecores de etiquetas, damos estilo a todas las etiquetas de un mismo tipo*/
+
+nombre_etiqueta{
+	background-color: green;
+	color:white;
+}
+
+
+
+/* selectores decendentes, podemos dar estilo a etiquetas que esten dentro de otra etiqueta*/
+
+etiqueta1 etiqueta2{
+	background-color: aqua;
+	color: red;
+}
+
+article a{
+	/* de esta forma damos estilo a todas las etiquetas <a> que se encuentren dentro de una etiqueta <article>*/
+	color: deeppink;
+	font-size: 20px;
+}
+
+
+/* selectores de clase, podemos dar estilo a todos los elementos que tengan la misma clase*/
+
+.nombre_de_clase{
+	background-color: purple;
+}
+
+.title-underline{
+	background-color: yellow;
+	color: blue;
+}
+
+
+/*un elemento puede tener 2 o mas clases, de esta forma damos estilo a los elementos que sean de los 2 tipos de clase*/
+
+.header .header-wrapper{
+	background-color: aqua;
+}
+
+.header .header-wrapper *{
+	background-color: green;
+	color: red;
+	border: 2px solid red;
+}
+
+/* selector de id, podemos dar estilo a los elementos que tengan el mismo id */
+
+#nombre_id{
+	background-color: purple;
+}
+							
+
+						</textarea>
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+	
+
+		<!-- --------- fin seccion selectores ------------------------------------->
+
+		<!-- footer-------------------------------------------------->
+		<footer class="footer">
+			<div class="footer-wrapper">
+				<p class="footer-text">
+					Elavorado por: <a class="link" href="https://www.facebook.com/daniel037s/" target="blank"> @daniel037 </a>
+				</p>
+				<p>
+					© www.daniel037.com
+				</p>
+			</div>
+		</footer>
+		<!-- fin de footer ---------------------------------------------->
+
+
+
+
+
+	</body>
+</html>
